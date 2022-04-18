@@ -1,6 +1,6 @@
 .place {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   grid-row-gap: 48px;
   grid-column-gap: 40px;
   margin-bottom: 80px;
@@ -8,4 +8,30 @@
 
 .place:nth-last-child(1) {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .place {
+    grid-row-gap: 48px;
+    grid-column-gap: 32px;
+    margin-bottom: 84px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .place {
+    grid-row-gap: 48px;
+    grid-column-gap: 28px;
+    margin-bottom: 72px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .place {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 32px;
+    grid-column-gap: 28px;
+    margin-bottom: 50px;
+  }
 }
