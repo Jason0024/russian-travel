@@ -2,7 +2,7 @@
 @import url(../vendor/normalize.css);
 
 /*Подключаем шрифты*/
-@import url(../fonts/inter.css);
+@import url(../vendor/fonts/inter.css);
 
 /*Общий стиль страницы*/
 @import url(../blocks/page/page.css);
